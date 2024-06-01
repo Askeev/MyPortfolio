@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+    </style>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="relative">
+        <img class="h-screen w-full object-cover" src="./imgs/картинка.jpg" alt="картинка">
+            <div class="flex flex-col items-center justify-center nav lg:flex-row top-0 left-0 right-0 py-5 absolute max-w-[1200px] px-[15px] lg:justify-between z-40">
+                <a href="./index.html" class=" text-white text-xl lg:text-2xl relative"><span class="font-bold">Freelancer</span> portfolio</a>
+                <ul id="navbar" class="flex text-white mt-5 gap-x-10 text-base lg:mt-0">
+                    <li class="relative"><a id="projectsLink" href="./index.html" class="hover:opacity-80 transition-opacity-[02s ease-in]">Projects</a></li>
+                    <li class="relative"><a id="skillsLink" href="./skills.html" class="hover:opacity-80 transition-opacity-[02s ease-in]">Skills</a></li>
+                    <li class="relative"><a id="contactsLink" href="./contacts.html" class="hover:opacity-80 transition-opacity-[02s ease-in]">Contacts</a></li>
+                </ul>
+            </div>
+    </nav>
+    <!-- nav -->
+    <header class="top-0 bottom-0 left-0 right-0 absolute flex flex-col text-white justify-center items-center z-30 bg-[#00000088] gap-5">
+        <h1 class="text-3xl lg:text-6xl font-bold">Hi, my name is Ayan</h1>
+        <p class="text-2xl lg:text-5xl font-bold">  a frontend developer </p>
+        <p class="text-base lg:text-lg font-bold">with passion for learning and creating.</p>
+        <a href="" class="px-8 py-4 bg-blue-500 rounded-xl font-bold hover:opacity-80 transition-opacity-[02s ease-in] active:relative top-[1px]">Download CV</a>
+    </header>
+    <main class="flex flex-col mb-[60px] px-5">
+        <h1 class="flex items-center justify-center mb-[60px] text-4xl lg:text-6xl font-bold mt-[60px] text-blue-500">Projects</h1>
+        <div class="flex flex-col lg:flex-row gap-5">
+            <a href="./project-page.html" class="flex flex-col p-5 border-2 border-solid border-red-500">
+                <div><img src="./imgs/Bbagy.png" alt=""></div>
+                <p class="text-base lg:text-xl font-bold mt-5">Landing Birlik Bagy</p>
+            </a>
+            <a href="./project-page.html" class="flex flex-col p-5 border-2 border-solid border-red-500">
+                <div><img src="./imgs/estetikaMob.png" alt=""></div>
+                <p class="text-base lg:text-xl font-bold mt-5">Landing Estetika Target Mobile</p>
+            </a>
+            <a href="./project-page.html" class="flex flex-col p-5 border-2 border-solid border-red-500">
+                <div><img src="./imgs/Estetikasmm.png" alt=""></div>
+                <p class="text-base lg:text-xl font-bold mt-5">Landing Estetika Smm</p>
+            </a>
+       </div> 
+    </main>
+
+    <footer class="flex flex-col">
+        <div class="flex items-center justify-center lg:flex flex-col bg-black lg:items-center lg:justify-center">
+            <ul class="hidden lg:flex px-[60px] py-[50px] gap-10">
+                <li>
+                    <a href="https://www.instagram.com/askeev_a/#">
+                        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="90" height="90" fill="url(#pattern0_5_2)"/>
+                            <defs>
+                            <pattern id="pattern0_5_2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_5_2" transform="scale(0.0111111)"/>
+                            </pattern>
+                            <image id="image0_5_2" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEyElEQVR4nO2cy29VVRSHLwOKjqsDCpiAMaKiWIsSHo1xaKLEKY8pCcrDmTiCONKgYUSBBhgCaqLgA5Uo8Q8wGA0+agLqEAExpcRabtvPrHQRSune99G1zzl37/0lN2lu2rXW+eV0nbXX3mfVaplMJpPJZDKZTCaTIsAC4AXgLeAU8AtwHbhFeYxpDD9rTBLb8xJrrdMAngEGgX/oHK4Dh4Cna1UHWAl8QWczCXwOPFWrGsB9wH6gTjzUgffk2mpVAHgE+IF4+R54uGyRVwFXiJ+/gTVlifwscIN0uAH0lZEurpIefwHLinzwSd5KlR+B+4sQWqqL1NkXWuQnIyvh2kU0WBlS6C/bDi0+Pg0lcq+ummJiDHgD6NHPbv2uGSaDLNe1dxEbu2e5ThG7WQ6G6MJ1UoOoWXpmuVa5s1tZyHRZCi2tThIRelGLNvothZaeLYmkjjdbtLHXUujTxMmY5uR2Hoa3+dhSaNkZKYOLwACwUauebmC+frr1u03yUAIulRTjT5ZCXysw8HHgBLC2xRjnAeuAk2qjKK5aCt3qv1O7nAUeNYj3MeCbgmL+z0blqcBD8y+w1SzgO3FvA0ZDB28ZcEiuyAaCWbD3xv5c6JauZbAhRV5uFqg/lQQT2zLQUOliVRO+HwJ2Al8BQ8BN/QzpdzuAJU3YWR0qjVRd6K0NfC4GjjVZQcjvHJVVXQObr6Ym9NkG/l4BRtrc19vQwPa5VIQe95VwwOvAxBzsy9/u8th/3LrOrqrQxxvcyXMR+TYTvjsb+IAEhF7rycntpAtfGulx+Fofu9AXZans8CEPPmuOeJbrf8Qs9ICnhAvRnxCbix0+D8cs9EaHfamTQ7Hd4XNzzEL3lrC7fsbhsy9mobsd9n8jHEMOnw/GLHSXw75ltTGTEc+GswlZ6CmGUxS622E/pw5joXsdQueHobHQmxxCS6szFK85fG6xcjCHZHFPUFYcdNhfEmjBUvcsWAZjFvqSZwku/WRrBj1L8D9jFlpY5/CxyPidmGFgocNXv6Gfygp90uPnRaMUIm3Slz1+PiQBocdls9Tja5dB43+nx/4Ko5535YUWvm7gb0ObaUTSxUseu5Kbv8WYKgstbGvgUw4dHmkyldS1iljYwGaQMrLqQo/K4ZYmfMvOy3Z9mf9X7YuM6M9npE52lXAz7KyR41spCo0eanHma8P4nwh5UNMyUAKLvdos2Nnv5KCnYS2DDc2oHG4xC/jOg29HqHQxnU48tntOzl0YxLsiRHVRxLHdIg+iTwDv65GAeS3ewf26GDGtk4s8iF7WqxW/6271Zt3jk9cpuvTzgH63RUs7s+MDZb5aEevLQhZ8ZCl0rK+/WbDHUuhYX+i0YL2l0At0LlzmbqRImG8mtPURqog4YCpyxGMk5sJksCGE2sTJTHE6iMjTmjNlDnCtCvXgIzWBd8u+ygrwTlCRp1Ug50mX7wobgSyzOnXYXmpcBpYWIvKMuaQpjcwclrnYhYo8Tey+RO7sy6WJPCONnI88Jy+tVQF9QO6LrPS7BbxtOgXMeKTmZx2+gpwEPrHY6Slq1v+AzoXrpAbRQNCZo6HQIVP9MrJMGuTABb2govYgZ2NMY7igMe3VGG27cJlMJpPJZDKZTCZT6xD+Bw8TuAekC6jrAAAAAElFTkSuQmCC"/>
+                            </defs>
+                        </svg>
+                            
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vk.com/id193399548">
+                        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="90" height="90" fill="url(#pattern0_5_3)"/>
+                            <defs>
+                            <pattern id="pattern0_5_3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_5_3" transform="scale(0.0111111)"/>
+                            </pattern>
+                            <image id="image0_5_3" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADd0lEQVR4nO2czYtNYRzHj9fxEpMMEyYLihSRUjQW/gMWhiwoUjNhvC4oLOQlWWCjhIUUysZKLKy9lYyELBSFJiwwg7zUR0+O3Lnuvec8557nN9e930/dxdTze873+dznPnPuec49USSEEEIIIYQQQgghImAUsA24C/RTv/QDd4CtQJPpWw+0AQ9pPHrc2C1nciNKLpQdfmbHy0Wj020h2q3Jjc5tC9F9gz3KGqDPQrQAJNoIiTZCoo2QaCMk2giJNkKijZBoIyTaCIk2QqKNkGgjJNoIiTainkQ/A9YCs4EJQHN8/OHx3/OAXcBXBoFaFL0caInlFL+mA5dK1PwEFqfMczLh+O7NmFHm1QpMAtbXg+iZCf2NAz6Uqb2cIk9XhWP3eOzqexGFxjcQcCJFn8cr1LdXIXpjyjG5eza8iELjGyjeY5yY0OdU4EuZ+u0JtZvL1L0ERqYYz5i4rRdRaMjGkSpm9YGEuh1l6jpTjudglgFFockSit+zuiWh39Yyt5ZVfJOA3SVqXqSczQuBb1kGFIWG7BxN0fce3zpgX4maFSmXjCdZBxOFJmswfs/qyQl9jwAeFdUdSqjZX9T+SspxnKliLDUt2nEqRf9LgO/8pSuh/d6Ctm/dEpTiGOuokig0Veb7AczxPN1altB2ddzua9KpYNx+LvC53kU7rqc8Tidw3n3lTmg3GjgNLE25Lj8lB6LQ5BES6AgetHT2wznl/29EvwbGBw/7b/bHjSbacTZ42Jy+nJTCImyedAQPPDD7EHfmk0dwi7B58g6YFjz0wPxD3aep2uAWQfPmPjA2ePCcZ7ZFyBBcdTOtikyL3OVYdzHfU/a5rIGj0BCOi2kuBJXIMwx4FffRC8z3qHXbYjeyhI1CQ1huJl27LpGnvcS6P8uj3m2pvfENGoWG8PQCKz3yuA3cYp4DUzz6WOMbMrNAj1BW3ANWuR+Qel69K5Rdcb+yoI9m33C5Ca0QyppPwDXgGLDBnXsXvDbFn4ByvAd2/jmFjK+LFO/ELwAu+IaqR9E1iUQbIdFGSLQREm2ERBsh0UZItBESbYREGyHRRki0ERJthEQbIdF1JFqPY4OPFqL1gEFsHjDo/QumOmSLheim+EGojcqDLLdFZJXd1qCyH1jfwvZnZne79arO/0H2AbfccmE2k4UQQgghhBBCCCGi2uYX6T8od4oe+88AAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                            
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/+77083014877">
+                        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="90" height="90" fill="url(#pattern0_5_4)"/>
+                            <defs>
+                            <pattern id="pattern0_5_4" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_5_4" transform="scale(0.0111111)"/>
+                            </pattern>
+                            <image id="image0_5_4" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGElEQVR4nO2dW4hWVRTHT1laWAopTdGFsoKgIHHM6KZSFlERFVkx3YgyAzUtKagogiAskMSKrIeK6qUHs8bILvRg9BAxNel0h8oudnGY6UY501x+sWgNfOb0fed41t5nn3P2D+ZlcM5e+z/f7LP2Wv+9TZJIJBKJRCKRSCQSiaQDmACcDNwAPAS8BGwFvgT6gUH96tfvbdV/86D+zGx5Rsrh6gVwOLAC2Aj8Rn5+BTqB5cBhSZ0B9geuAd4ERnDHMPAGcDWwX1IXgAP0k7Yd/+wA7gOmJlUF2Be4HeijeCSGlRJTUiWAM4EewuMzYEFSdmRNBB4DRgkXiW0tMCkpI8BRwLuUh/eBY5MyIX+ORmmabyQtPCspA8AlwE7KyyBwRRIywE2Oc2JfyBwWJSECXKybg6owAlyehISsa8AA1WMQODcJAeC4kr74srwgjyla5EmaFlWdrkLzbN2M1IW1RW6rQ97xWSNznedb5H2ALdSPHq+FKK3C1ZVbfYl8oFGp83fgHmA+0K5L0ZOET6/U1H0IfYdRytQ+zrP3At4hfFb6aD/9ZPBSOb/JGBcRPj84bYtpjy8v61J0wbcRPle5FFoaqXnYCbSlGOdOwuc1l5aAvJW59SnHOrgEtRMpoB3qQmjxXeRlaYbxnid8lroQWswteVmQYbzTCJ8NLnaCkpLlZXbGcT8ibPpN7WfqhbNgbsZxXyF82i2FFvOg15SIf1++Zeg9Xm8ptLg6LXgkw1L1OuVglaXQLxsFtU222SnGe5Ty8KKl0JYl0bktxrqOctFtKfTXhoF1thhL3J5l4itLoa0doPOajDUF+Jby0GsptLTdLeluln9KdY/yMGAp9JCDAO9qMeY6aij0Hw4CHALmtDCub6ZmS8ePjoL8RJoJLap4H1Ojl6Gsqa54usXYbYGLbZreua45LG4x/kHApgzPewGYDpwHvEWJNiwPOw7271ZmQmBv4P4UzYeu/y5HwCm6ux0NfQtuVVRqhhglZ6aIZU4Tv580jo9o8rMnakNhKNSi0iz8eSZOShHPBD2g2XjSS3L9M1LOZwbwjFHMs0xEbpiYReHfTOwGH8iFwLNiU9iDea0npMK/YSsri4vpf70fhnN6ilBehA1BLcZ/l3mF+UR2nVPejGSJi6DaCjqj8qqLGwp055lnORQtDrGOayy4oroefdIGS9M0yDCXC3LGtMkqlvGCu4xi+QC4VHLqnPOYCnyaM5YOO2V3D3Ai8B3F0wPcDEzbgznMMOgYbXd+94eRY8lyRynlgQ5gcooPyRKjJsZtTkXWgCc7rObl4S/gbdkS6zFpOft4qi41qw0dqr2tfqmWYi+iviz3InLDTtFFMyB0PhTPiU+hj6d+jBZx/G0Z9WONV5ELqHuEwHuStfgWeWLN1udfgKO9iqxCy7nAujAInONdZBX6AerBCLCwEJFVaOnJVZ1h4MYiRZ5ekTuTmjFQ+BU/wJVU/8U3v1CRjVo/IdNV+JU+YwDfU80d3xrveXILT0TV2AKcnoSEXAiSIxfdDNyrz/iG4unVO6z9FYjSktH7JnfvPyF5qDj4k92botcCn+Ofn/Xoxi4xhXY98Z9NJvAF8Lj2FKdlOOK2ULwRjs8TDuuHpCP4q+eBs8e5GOQ58Z0BRxo8f4reBdJpdFmhOIg2aOvKjSXABcDd6sa8BTjBQ1NhphorV2tPsFvbZyLg2Lrfp0tUt/5VrNJfvPgE438PEolEIpFIJBKJRCJJSv4BTVJGZgtlT7YAAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                            
+                    </a>
+                </li> 
+                <li>
+                    <a href="https:https://www.linkedin.com/in/">
+                        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="90" height="90" fill="url(#pattern0_4_5)"/>
+                            <defs>
+                            <pattern id="pattern0_4_5" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_4_5" transform="scale(0.0111111)"/>
+                            </pattern>
+                            <image id="image0_4_5" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEyklEQVR4nO2dy4tdRRCHC4zG4AsEMb5QiQ8MrqIh4INcRAUXvhBficFEEzcJjknQpbiKo6s44L/gRoivRUTBpS8iYxIXbnyBGs1kJhGRzOBMPqmZItzEe+f0nO5zTvc5/cFshumu6h93zumurqorkslkMplMJpPJZDIZN4BzgLXA88CbwPvAIeAHYAqYsZ8p+90h+5s3bMztOoejuW4BXA28BHwE/IU/J4APgRHgKukywApgE/ApMEd1zAKfAM8A50tXAC60T9pv1M9R4DXgEmkrwLnAy8AkzaM+7FafpE0AdwOHiY/vgXsldfSZCLwNnCJe1LcxYLmkCHAd8CXp8A1wg6SE/jsG2qbVjW4L75EUAB4FTpIuM8CTEjPACxXvietC17BNYgR4xA4HbWEOeEJiQp9rwDTtYwa4X2IAuDHRF99SXpCrmhZ5uW2L2s6BRvfZdhjpCmNNiby+5Invb2Av8CBwB/AY8E7kp0fMv7uaCBB9V8LZI8DNQ+Z8OgGx9ZJhWZ1CaxSuDJsK5n2X+NlZl8gXeYQ6Ly2YewvxM6Ex9TqEfsXDyRUFcz9FGuyu4/rpDw8HewXzv0Ua/F7ptZjd8fnw+bD9KHAr8A/psLFKofUi1Zcv7Mg+//YGVgIvAsdJi4+rTAkIGZmbS+wTfDYaQLuiCqE17yJzJjuqEFqTWzJnsi+0yMssiuWFuNkqNdZCAv27Ao3DPACsBi6z0+w1wAbgM8IwFTT9zHLhvBE3Wz5Cz1q+XuHWC3gO+DfAsm5z1dFl8Zo86I242fIRekfN21Vly1JsFjmknxJvxM1WqbFlj8X6nPVc1mgZu8Oc+cDTmXkcbQ0k2GL+b+8W/HgvpDMHPZ2Zx9HWQIItZrDNryjPeEhHfvJw5DSOtgayxHjMNmCPXiw4jtEM07L86OqbiyPHPBw5jaMtn7F6UfzLWafPEYdxD1GeCQmFXbt7I262fMYO2h9r1tTKgnE3eSxr2lXHVggNXL7IVdizBWP1QBOF0NE/OoB1i5h+tWDsebE8On4mAOJmq9RYvVRYxPSesnbrfhlGv72jOaHHO3VgoTmh93XtCN5rSOjXXXVsS1Cp15DQm111bEuYtNeQ0GtcdXStz/a+PBU3WykJfTx43bnVVnshbnZSEjrsVZY5omXFXoibnZSE3i6hAa70rVERNzupCD1bFEMpjXUJKI242UhF6P1SFb53bOJmIxWhN0jFtd2l2z+Im40UhD5SlBnbZBJ6m9hVqcgm9AWWjN1VjtWSiG5ia1ORrjJSi8h9KWLf0j0O1961RkvBEqiiComudX2tIveJrZ1busLeRkTuK1HW8t2287XeKzYmtIm9KkRKb8RohO56iQE7LKTcdWYYmmZxn8QE8HALG6M8LjFiOW9taPUzC2yVmLGWPyk/Rqaja/EzDKsjPJHoi68nKQFca8WbqXCg8ZY+nvvsschPkKesUUuz++SAx/WDxIf6dKe0CRYCUTsjCbFO2GVzfd1k6oaFeLYu8tcGBP7Tyigulq7AwrXYRu0SUPFBR+febxWz3Wk9PwjtEqDFmFpKZmW/vkzZXNsrSwlIHRbSz9ZYCfGoFVyO21eBTPZ9Pcik/W7c/mbUejLp2Pz1IJlMJpPJZDKZTCYjjvwH0otdcKMyphQAAAAASUVORK5CYII="/>
+                            </defs>
+                        </svg>
+                    </a>
+                </li>           
+            </ul>
+            <ul class="flex items-center justify-center px-[60px] py-[50px] gap-10 lg:hidden">
+                <li>
+                    <a href="https://www.instagram.com/askeev_a/#" class="flex items-center justify-center  w-[48px] h-[48px] lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,300,150"
+                            style="fill:#FFFFFF;">
+                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vk.com/id193399548" class="flex items-center justify-center  w-[48px] h-[48px] lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,300,150"
+                            style="fill:#FFFFFF;">
+                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.682,0 -23,10.318 -23,23c0,12.682 10.318,23 23,23c12.683,0 23,-10.318 23,-23c0,-12.682 -10.317,-23 -23,-23zM34.973,29.535c2.237,1.986 2.702,2.695 2.778,2.816c0.927,1.47 -1.028,1.649 -1.028,1.649h-4.12c0,0 -1.003,0.011 -1.86,-0.557c-1.397,-0.915 -2.86,-2.689 -3.888,-2.381c-0.863,0.258 -0.855,1.424 -0.855,2.421c0,0.357 -0.307,0.517 -1,0.517c-0.693,0 -0.981,0 -1.288,0c-2.257,0 -4.706,-0.76 -7.149,-3.313c-3.456,-3.609 -6.487,-10.879 -6.487,-10.879c0,0 -0.179,-0.366 0.016,-0.589c0.221,-0.25 0.822,-0.218 0.822,-0.218l3.995,-0.001c0,0 0.376,0.071 0.646,0.261c0.223,0.156 0.347,0.454 0.347,0.454c0,0 0.671,2.216 1.526,3.629c1.67,2.758 2.447,2.828 3.014,2.531c0.828,-0.43 0.558,-3.362 0.558,-3.362c0,0 0.037,-1.259 -0.395,-1.82c-0.333,-0.434 -0.97,-0.665 -1.248,-0.701c-0.225,-0.029 0.151,-0.423 0.63,-0.648c0.64,-0.285 1.511,-0.358 3.013,-0.344c1.169,0.011 1.506,0.081 1.962,0.186c1.379,0.318 1.038,1.157 1.038,4.103c0,0.944 -0.13,2.271 0.582,2.711c0.307,0.19 1.359,0.422 3.231,-2.618c0.889,-1.442 1.596,-3.834 1.596,-3.834c0,0 0.146,-0.263 0.373,-0.393c0.232,-0.133 0.225,-0.13 0.543,-0.13c0.318,0 3.507,-0.025 4.207,-0.025c0.699,0 1.355,-0.008 1.468,0.402c0.162,0.589 -0.516,2.607 -2.234,4.797c-2.823,3.594 -3.136,3.258 -0.793,5.336z"></path></g></g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href=" https://wa.me/+77083014877" class=" flex items-center justify-center  w-[48px] h-[48px] lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,300,150"
+                            style="fill:#FFFFFF;">
+                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c-12.69047,0 -23,10.30953 -23,23c0,4.0791 1.11869,7.88588 2.98438,11.20898l-2.94727,10.52148c-0.09582,0.34262 -0.00241,0.71035 0.24531,0.96571c0.24772,0.25536 0.61244,0.35989 0.95781,0.27452l10.9707,-2.71875c3.22369,1.72098 6.88165,2.74805 10.78906,2.74805c12.69047,0 23,-10.30953 23,-23c0,-12.69047 -10.30953,-23 -23,-23zM25,4c11.60953,0 21,9.39047 21,21c0,11.60953 -9.39047,21 -21,21c-3.72198,0 -7.20788,-0.97037 -10.23828,-2.66602c-0.22164,-0.12385 -0.48208,-0.15876 -0.72852,-0.09766l-9.60742,2.38086l2.57617,-9.19141c0.07449,-0.26248 0.03851,-0.54399 -0.09961,-0.7793c-1.84166,-3.12289 -2.90234,-6.75638 -2.90234,-10.64648c0,-11.60953 9.39047,-21 21,-21zM16.64258,13c-0.64104,0 -1.55653,0.23849 -2.30859,1.04883c-0.45172,0.48672 -2.33398,2.32068 -2.33398,5.54492c0,3.36152 2.33139,6.2621 2.61328,6.63477h0.00195v0.00195c-0.02674,-0.03514 0.3578,0.52172 0.87109,1.18945c0.5133,0.66773 1.23108,1.54472 2.13281,2.49414c1.80347,1.89885 4.33914,4.09336 7.48633,5.43555c1.44932,0.61717 2.59271,0.98981 3.45898,1.26172c1.60539,0.5041 3.06762,0.42747 4.16602,0.26563c0.82216,-0.12108 1.72641,-0.51584 2.62109,-1.08203c0.89469,-0.56619 1.77153,-1.2702 2.1582,-2.33984c0.27701,-0.76683 0.41783,-1.47548 0.46875,-2.05859c0.02546,-0.29156 0.02869,-0.54888 0.00977,-0.78711c-0.01897,-0.23823 0.0013,-0.42071 -0.2207,-0.78516c-0.46557,-0.76441 -0.99283,-0.78437 -1.54297,-1.05664c-0.30567,-0.15128 -1.17595,-0.57625 -2.04883,-0.99219c-0.8719,-0.41547 -1.62686,-0.78344 -2.0918,-0.94922c-0.29375,-0.10568 -0.65243,-0.25782 -1.16992,-0.19922c-0.51749,0.0586 -1.0286,0.43198 -1.32617,0.87305c-0.28205,0.41807 -1.4175,1.75835 -1.76367,2.15234c-0.0046,-0.0028 0.02544,0.01104 -0.11133,-0.05664c-0.42813,-0.21189 -0.95173,-0.39205 -1.72656,-0.80078c-0.77483,-0.40873 -1.74407,-1.01229 -2.80469,-1.94727v-0.00195c-1.57861,-1.38975 -2.68437,-3.1346 -3.0332,-3.7207c0.0235,-0.02796 -0.00279,0.0059 0.04687,-0.04297l0.00195,-0.00195c0.35652,-0.35115 0.67247,-0.77056 0.93945,-1.07812c0.37854,-0.43609 0.54559,-0.82052 0.72656,-1.17969c0.36067,-0.71583 0.15985,-1.50352 -0.04883,-1.91797v-0.00195c0.01441,0.02867 -0.11288,-0.25219 -0.25,-0.57617c-0.13751,-0.32491 -0.31279,-0.74613 -0.5,-1.19531c-0.37442,-0.89836 -0.79243,-1.90595 -1.04102,-2.49609v-0.00195c-0.29285,-0.69513 -0.68904,-1.1959 -1.20703,-1.4375c-0.51799,-0.2416 -0.97563,-0.17291 -0.99414,-0.17383h-0.00195c-0.36964,-0.01705 -0.77527,-0.02148 -1.17773,-0.02148zM16.64258,15c0.38554,0 0.76564,0.0047 1.08398,0.01953c0.32749,0.01632 0.30712,0.01766 0.24414,-0.01172c-0.06399,-0.02984 0.02283,-0.03953 0.20898,0.40234c0.24341,0.57785 0.66348,1.58909 1.03906,2.49023c0.18779,0.45057 0.36354,0.87343 0.50391,1.20508c0.14036,0.33165 0.21642,0.51683 0.30469,0.69336v0.00195l0.00195,0.00195c0.08654,0.17075 0.07889,0.06143 0.04883,0.12109c-0.21103,0.41883 -0.23966,0.52166 -0.45312,0.76758c-0.32502,0.37443 -0.65655,0.792 -0.83203,0.96484c-0.15353,0.15082 -0.43055,0.38578 -0.60352,0.8457c-0.17323,0.46063 -0.09238,1.09262 0.18555,1.56445c0.37003,0.62819 1.58941,2.6129 3.48438,4.28125c1.19338,1.05202 2.30519,1.74828 3.19336,2.2168c0.88817,0.46852 1.61157,0.74215 1.77344,0.82227c0.38438,0.19023 0.80448,0.33795 1.29297,0.2793c0.48849,-0.05865 0.90964,-0.35504 1.17773,-0.6582l0.00195,-0.00195c0.3568,-0.40451 1.41702,-1.61513 1.92578,-2.36133c0.02156,0.0076 0.0145,0.0017 0.18359,0.0625v0.00195h0.00195c0.0772,0.02749 1.04413,0.46028 1.90625,0.87109c0.86212,0.41081 1.73716,0.8378 2.02148,0.97852c0.41033,0.20308 0.60422,0.33529 0.6543,0.33594c0.00338,0.08798 0.0068,0.18333 -0.00586,0.32813c-0.03507,0.40164 -0.14243,0.95757 -0.35742,1.55273c-0.10532,0.29136 -0.65389,0.89227 -1.3457,1.33008c-0.69181,0.43781 -1.53386,0.74705 -1.8457,0.79297c-0.9376,0.13815 -2.05083,0.18859 -3.27344,-0.19531c-0.84773,-0.26609 -1.90476,-0.61053 -3.27344,-1.19336c-2.77581,-1.18381 -5.13503,-3.19825 -6.82031,-4.97266c-0.84264,-0.8872 -1.51775,-1.71309 -1.99805,-2.33789c-0.4794,-0.62364 -0.68874,-0.94816 -0.86328,-1.17773l-0.00195,-0.00195c-0.30983,-0.40973 -2.20703,-3.04868 -2.20703,-5.42578c0,-2.51576 1.1685,-3.50231 1.80078,-4.18359c0.33194,-0.35766 0.69484,-0.41016 0.8418,-0.41016z"></path></g></g>
+                        </svg>
+                    </a>
+                </li> 
+            </ul>
+            <p class="opacity-50 text-white mb-10">Askeev9601@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

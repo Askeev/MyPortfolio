@@ -1,0 +1,27 @@
+
+@font-face {
+    font-family: 'MontserratRG';
+    src: url('./Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MontserratBD';
+    src: url('./Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MontserratSB';
+    src: url('./Montserrat-SemiBold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MontserratRG', Arial, sans-serif;
+}
+
+.bold {
+    font-family: 'MontserratBD', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.semibold {
+    font-family: 'MontserratSB', Arial, sans-serif;
+}
+
